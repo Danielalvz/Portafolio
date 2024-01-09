@@ -151,7 +151,7 @@ footer button i:hover {
 
 /* MAIN */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), hsla(0, 0%, 100%, .2)), url(https://github.com/Danielalvz/Portafolio/blob/main/img/desarrollo.jpg?raw=true);
+    background-image: linear-gradient(rgba(0, 0, 0, .6), hsla(0, 0%, 100%, .2)), url(../img/desarrollo.jpg);
     color: #fff;
     height: 90vh;
     background-size: cover;
