@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Icono pestaña -->
+    <link rel="icon" href="img/person.png">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/d3c8ba32df.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Oregano&family=Poppins&family=Raleway:wght@400;600&family=Roboto&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="fa-solid fa-x"></i></button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#proyectos">Projects</a></li>
+                <li><a href="#perfil">About me</a></li>
+                <li><a href="#tecnologias">Technologies</a></li>
+            </ul>
+            <button class="switch" id="switch">
+                <span><i class="fa-solid fa-sun"></i></span>
+                <span><i class="fa-solid fa-moon"></i></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="../img/foto.png" alt="Foto Daniela" class="img-foto">
+            <div class="presentacion">
+                <h1>Hello, I'm <span>Daniela Lozano</span></h1>
+                <p>A web developer</p>
+                <div class="idiomaSection">
+                    <p>Language</p>
+                    <button class="switch active" id="idioma">
+                        <span>ES</i></span>
+                        <span>EN</i></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="perfil">
+            <img src="../img/personaje.jpg" alt="Imagen programacion">
+            <div class="perfil-descripcion">
+                <h2>About me</h2>
+                <p>Hello, I'm Daniela, passionate about technology and software development. I am a professional in
+                    international business and I have been learning software development on my own, specializing in some
+                    courses and practicing with web application projects.</p>
+                <p>My focus is on Frontend development using technologies such as HTML, CSS, JavaScript and Bootstrap,
+                    complemented by strong skills in Backend development using Java and MySQL.
+                </p>
+            </div>
+        </section>
+        <section id="tecnologias">
+            <h2>Technologies</h2>
+            <div class="herramientas">
+                <div class="tipos-herramientas">
+                    <h4>Frontend</h4>
+                    <div class="herramienta">
+                        <img src="../img/html.png" alt="Icono HTML">
+                        <p class="descripcion">HTML: Markup language used to structure the content of a web page.</p>
+                    </div>
+                    <div class="herramienta">
+                        <img src="../img/css.png" alt="Icono CSS">
+                        <p class="descripcion">CSS: Styling language used to design and format HTML content.</p>
+                    </div>
+                    <div class="herramienta">
+                        <img src="../img/js.png" alt="Icono Javascript">
+                        <p class="descripcion">JavaScript: A programming language that enables client-side interactivity
+                            on a web page.</p>
+                    </div>
+
+                    <div class="herramienta">
+                        <img src="../img/bootstrap.png" alt="Icono Bootstrap">
+                        <p class="descripcion">Bootstrap: Open source design framework that makes it easy to design and
+                            style responsive web pages.</p>
+
+                    </div>
+                </div>
+                <div class="tipos-herramientas">
+                    <h4>Backend</h4>
+                    <div class="herramienta">
+                        <img src="../img/java.png" alt="Icono Java">
+                        <p class="descripcion">Java: Versatile programming language used for application development,
+                            including the backend.</p>
+                    </div>
+                    <div class="herramienta">
+                        <img src="../img/mysql.png" alt="Icono MySQL">
+                        <p class="descripcion">MySQL: Relational database management system.</p>
+                    </div>
+                </div>
+                <div class="tipos-herramientas">
+                    <h4>Version control</h4>
+                    <div class="herramienta">
+                        <img src="../img/git.png" alt="Icono Git">
+                        <p class="descripcion">Git: Version control system that allows tracking changes to the source
+                            code.</p>
+                    </div>
+                    <div class="herramienta">
+                        <img src="../img/github.png" alt="Icono Github">
+                        <p class="descripcion">GitHub: Web-based platform that uses Git for version control and project
+                            collaboration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="proyectos">
+            <div class="titulo-proyectos">
+                <img src="../img/app-coding.png" alt="Imagen pc">
+                <h2>{ Projects }</h2>
+            </div>
+            <div class="proyectos-cards">
+                <div class="cards">
+                    <img src="../img/post-it.png" alt="Aplicacion tarea de notas">
+                    <div class="contenido-proyectos">
+                        <h3>Task list</h3>
+                        <p>This is a project that I created to organize tasks, in a simple post-it type way but
+                            virtually, with personalized colors, since many people are more visual and remember colors
+                            more, being an important aspect when remembering their tasks.</p>
+                        <div class="enlaces-proyecto">
+                            <button class="btnProyectos"><a href="https://danielalvz.github.io/listaTareasBootstrap/"
+                                    target="_blank">View page</a></button>
+                            <button class="btnProyectos"><a href="https://github.com/Danielalvz/listaTareasBootstrap"
+                                    target="_blank">View code</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../img/deportes.png" alt="Página deportes">
+                    <div class="contenido-proyectos">
+                        <h3>Landing page sports</h3>
+                        <p>Design project for a sports page under the brand "sportit," created with HTML and CSS.
+                        </p>
+                        <div class="enlaces-proyecto">
+                            <button class="btnProyectos"><a href="https://danielalvz.github.io/paginaDeportes/"
+                                    target="_blank">View page</a></button>
+                            <button class="btnProyectos"><a href="https://github.com/Danielalvz/paginaDeportes"
+                                    target="_blank">View code</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../img/caballos.jpg" alt="Página caballos">
+                    <div class="contenido-proyectos">
+                        <h3>Landing page horses</h3>
+                        <p>Project to practice design skills by replicating an exact image using HTML, CSS, and
+                            Bootstrap.
+                        </p>
+                        <div class="enlaces-proyecto">
+                            <button class="btnProyectos"><a href="https://danielalvz.github.io/paginaCaballos/"
+                                    target="_blank">View page</a></button>
+                            <button class="btnProyectos"><a href="https://github.com/Danielalvz/paginaCaballos"
+                                    target="_blank">View code</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer id="footer">
+        <div>
+            <button><a href=""><i class="fa-brands fa-linkedin"></i></a></button>
+            <button><a href="https://github.com/Danielalvz" target="_blank"><i
+                        class="fa-brands fa-github"></i></a></button>
+            <button><a href=""><i class="fa-solid fa-envelope"></i></a></button>
+        </div>
+        <div>
+            <p>© 2023 Copyright:</p>
+            <a class="text-dark" href="https://github.com/Danielalvz" target="_blank">Daniela Lozano</a>
+        </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
