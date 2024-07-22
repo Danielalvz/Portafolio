@@ -64,11 +64,18 @@ switchButton.addEventListener("click", idiomaSwitch);
 function idiomaSwitch() {
   switchButton.classList.toggle("active");
 
-  const isActive = switchButton.classList.contains("active");
+  const isEnglish = switchButton.classList.contains("active");
+  localStorage.setItem("language", isEnglish ? "en" : "es");
 
-  if (isActive) {
+  const language = localStorage.getItem("language") || "es";
+  location.href = language === "en" ? "en/index.html" : "../index.html";
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const storedLanguage = localStorage.getItem("language") || "es";
+  if (storedLanguage === "en" && !location.href.includes("en/")) {
     location.href = "en/index.html";
-  } else {
+  } else if (storedLanguage === "es" && location.href.includes("en/")) {
     location.href = "../index.html";
   }
-}
+});

@@ -2,13 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
-    /* --purple: #503aa4; */
-    /* --purple: linear-gradient(120deg, #ca96f6, #00a67f); */
     --purple: linear-gradient(135deg, #66d4c2, #2bca6a);
     --purple-light: rgb(184, 147, 197);
     --purple-pink: #49c293;
     --purple-gray: rgb(69, 60, 71);
-    /* --purple-dark: rgba(14, 4, 23, 0.959); */
     --purple-dark: #13172c;
     --purple-dark-nav: rgb(14, 4, 23);
 }
@@ -190,16 +187,7 @@ body.dark .hero {
 }
 
 .hero {
-    /* background-image: linear-gradient(rgb(255 255 255), hsl(0deg 0% 100% / 31%)), url(../img/desarrollo.jpg); */
-
-    /* background-color: #FFF3FE; */
     background-color: #ffffff;
-
-    /* background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat; */
-
-
 }
 
 .hero-content {
