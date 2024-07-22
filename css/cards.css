@@ -1,0 +1,99 @@
+.tilt {
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.tilt__content {
+    width: 300px;
+}
+
+.tilt__content img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1104px) {
+    .tilt__content{
+        width: 280px;
+    }
+}
+
+/* FLIP CARD */
+.flip-card {
+    position: relative;
+    width: 200px;
+    height: 350px;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card-front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    line-height: 25px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-back {
+    transform: perspective(600px) rotateY(100deg);
+    background: #13172c;
+    background: linear-gradient(to bottom, #020806f1, rgb(40, 49, 82));
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+body.dark .card-back {
+    background: linear-gradient(to bottom, #49c294f1, rgb(40, 49, 82)); 
+}
+
+.card-back h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card-back p {
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+.flip-card:hover .card-front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.flip-card:hover .card-back {
+    transform: perspective(600px) rotateY(360deg);
+}

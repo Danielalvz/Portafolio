@@ -10,6 +10,7 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/d3c8ba32df.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cards.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +27,10 @@
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#perfil">Sobre mí</a></li>
+                <li><a href="#profile">Sobre mí</a></li>
                 <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+
             </ul>
             <button class="switch" id="switch">
                 <span><i class="fa-solid fa-sun"></i></span>
@@ -36,162 +39,383 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <img src="img/foto.png" alt="Foto Daniela" class="img-foto">
-            <div class="presentacion">
-                <h1>Hola, soy <span>Daniela Lozano</span></h1>
-                <p>Desarrolladora web</p>
-                <div class="idiomaSection">
-                    <p>Idioma</p>
-                    <button class="switch" id="idioma">
-                        <span>ES</i></span>
-                        <span>EN</i></span>
-                    </button>
+        <section class="hero gradient">
+            <div class="hero-content">
+                <div class="tilt">
+                    <div class="tilt__content">
+                        <img src="img/dog-its-fine.png" alt="">
+                    </div>
                 </div>
+
+                <div class="presentacion">
+                    <h1>¡Bienvenidos!
+                        <p>
+                            Soy <span>Daniela Lozano</span>
+                        </p>
+                    </h1>
+                    <p>Desarrolladora Fullstack</p>
+                    <p class="hero-description">Creo aplicaciones web fullstack eficientes, innovadoras y con
+                        experiencias de usuario
+                        excepcionales.</p>
+                    <div class="idiomaSection">
+                        <p>Idioma</p>
+                        <button class="switch" id="idioma">
+                            <span>ES</i></span>
+                            <span>EN</i></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- <div class="tilt">
+                    <div class="tilt__content">
+                        <img src="img/dog-its-fine.png" alt="">
+                    </div>
+                </div> -->
+                <!-- <img src="img/plastilina.png" class="img-hero" alt="Mujer con computador"> -->
             </div>
         </section>
-        <section id="perfil">
+        <!-- <section id="perfil">
             <img src="img/personaje.jpg" alt="Imagen programacion">
             <div class="perfil-descripcion">
                 <h2>Sobre mí</h2>
-                <p>Hola, soy Daniela, una apasionada por la tecnología y el desarrollo de software. Soy profesional en negocios internacionales, con enfoque en desarrollo de software.  He
+                <p>Hola, soy Daniela, una apasionada por la tecnología y el desarrollo de software. Soy profesional en
+                    negocios internacionales, con enfoque en desarrollo de software. He
                     estado aprendiendo de manera autodidacta, especializandome con algunos cursos y practicando con
                     proyectos de aplicativos web.</p>
                 <p>Mi enfoque se centra en el desarrollo Frontend utilizando tecnologías como HTML, CSS, JavaScript y
                     Bootstrap, complementado con sólidas habilidades en el desarrollo Backend utilizando Java y MySQL.
                 </p>
             </div>
+        </section> -->
+        <section id="profile" class="profile">
+            <h2 class="title anton-sc-regular">Sobre mí</h2>
+            <img src="img/1.png" alt="Foto Daniela" class="img-foto">
+            <div class="perfil-descripcion">
+
+                <p>Soy profesional en
+                    negocios internacionales, con enfoque en desarrollo de software. Me apasiona la tecnología, en especial el desarrollo de software. He
+                    estado aprendiendo de manera autodidacta, especializandome con algunos cursos y practicando con
+                    proyectos de aplicativos web.</p>
+                <p>Mi enfoque se centra en el desarrollo Frontend utilizando tecnologías como HTML, CSS, JavaScript y
+                    Bootstrap, complementado con sólidas habilidades en el desarrollo Backend utilizando Java, Spring y MySQL.
+                </p>
+            </div>
         </section>
-        <section id="tecnologias">
-            <h2>Tecnologías</h2>
+        <section id="tecnologias" class="technologies gradient">
+            <div class="title-tech">
+                <h3 class="title anton-sc-regular">Tecnologías</h3>
+                <div class="tilt">
+                    <div class="tilt__content">
+                        <img src="img/pc.png" alt="Imagen de computador">
+                    </div>
+                </div>
+            </div>
             <div class="herramientas">
                 <div class="tipos-herramientas">
-                    <h4>Frontend</h4>
-                    <div class="herramienta">
-                        <img src="img/html.png" alt="Icono HTML">
-                        <p class="descripcion">HTML: Lenguaje de marcado utilizado para estructurar el contenido de una
-                            página web.</p>
-                    </div>
-                    <div class="herramienta">
-                        <img src="img/css.png" alt="Icono CSS">
-                        <p class="descripcion">CSS: Lenguaje de estilo utilizado para diseñar y dar formato al contenido
-                            HTML.</p>
-                    </div>
-                    <div class="herramienta">
-                        <img src="img/js.png" alt="Icono Javascript">
-                        <p class="descripcion">JavaScript: Lenguaje de programación que permite la interactividad en el
-                            lado del cliente en una página web.</p>
+                    <h4><i class="fas fa-laptop-code"></i> Frontend</h4>
+                    <div class="card-herramientas">
+                        <div class="herramienta">
+                            <img src="img/html.png" alt="Icono HTML">
+                            <p class="descripcion">HTML: Lenguaje de marcado utilizado para estructurar el contenido de
+                                una
+                                página web.</p>
+                        </div>
+                        <div class="herramienta">
+                            <img src="img/css.png" alt="Icono CSS">
+                            <p class="descripcion">CSS: Lenguaje de estilo utilizado para diseñar y dar formato al
+                                contenido
+                                HTML.</p>
+                        </div>
+                        <div class="herramienta">
+                            <img src="img/js.png" alt="Icono Javascript">
+                            <p class="descripcion">JavaScript: Lenguaje de programación que permite la interactividad en
+                                el
+                                lado del cliente en una página web.</p>
+                        </div>
+                        <div class="herramienta">
+                            <img src="img/bootstrap.png" alt="Icono Bootstrap">
+                            <p class="descripcion">Bootstrap: Marco de diseño de código abierto que facilita el diseño y
+                                la
+                                estilización de páginas web responsivas.</p>
+                        </div>
+                        <div class="herramienta">
+                            <img src="img/angular.png" alt="Icono Angular">
+                            <p class="descripcion">Angular: Framework de desarrollo web, utilizado para
+                                crear aplicaciones de una sola página (SPA) con una arquitectura robusta y modular.</p>
+                        </div>
                     </div>
 
-                    <div class="herramienta">
-                        <img src="img/bootstrap.png" alt="Icono Bootstrap">
-                        <p class="descripcion">Bootstrap: Marco de diseño de código abierto que facilita el diseño y la
-                            estilización de páginas web responsivas.</p>
-
+                </div>
+                <div class="tipos-herramientas">
+                    <h4><i class="fas fa-server"></i> Backend</h2>
+                    </h4>
+                    <div class="card-herramientas">
+                        <div class="herramienta">
+                            <img src="img/java.png" alt="Icono Java">
+                            <p class="descripcion">Java: Lenguaje de programación versátil utilizado para el desarrollo
+                                de
+                                aplicaciones, incluyendo el backend.</p>
+                        </div>
+                        <div class="herramienta">
+                            <img src="img/mysql.png" alt="Icono MySQL">
+                            <p class="descripcion">MySQL: Sistema de gestión de bases de datos relacional.</p>
+                        </div>
+                        <div class="herramienta">
+                            <img src="img/spring-boot.png" alt="Icono Spring Boot">
+                            <p class="descripcion">Spring Boot: Framework que facilita la creación rápida de
+                                aplicaciones
+                                Java, con configuración mínima, auto-configuración y servidores embebidos para un
+                                despliegue
+                                sencillo.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="tipos-herramientas">
-                    <h4>Backend</h4>
-                    <div class="herramienta">
-                        <img src="img/java.png" alt="Icono Java">
-                        <p class="descripcion">Java: Lenguaje de programación versátil utilizado para el desarrollo de
-                            aplicaciones, incluyendo el backend.</p>
-                    </div>
-                    <div class="herramienta">
-                        <img src="img/mysql.png" alt="Icono MySQL">
-                        <p class="descripcion">MySQL: Sistema de gestión de bases de datos relacional.</p>
-                    </div>
-                </div>
-                <div class="tipos-herramientas">
-                    <h4>Control de Versiones</h4>
-                    <div class="herramienta">
-                        <img src="img/git.png" alt="Icono Git">
-                        <p class="descripcion">Git: Sistema de control de versiones que permite el seguimiento de
-                            cambios en el código fuente.</p>
-                    </div>
-                    <div class="herramienta">
-                        <img src="img/github.png" alt="Icono Github">
-                        <p class="descripcion">GitHub: Plataforma basada en web que utiliza Git para el control de
-                            versiones y colaboración en proyectos.</p>
+                    <h4><i class="fas fa-code-branch"></i> Control de versiones</h4>
+                    <div class="card-herramientas">
+                        <div class="herramienta">
+                            <img src="img/git.png" alt="Icono Git">
+                            <p class="descripcion">Git: Sistema de control de versiones que permite el seguimiento de
+                                cambios en el código fuente.</p>
+                        </div>
+                        <div class="herramienta">
+                            <img src="img/github.png" alt="Icono Github">
+                            <p class="descripcion">GitHub: Plataforma basada en web que utiliza Git para el control de
+                                versiones y colaboración en proyectos.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="proyectos">
-            <div class="titulo-proyectos">
-                <img src="img/app-coding.png" alt="Imagen pc">
-                <h2>{ Proyectos }</h2>
-            </div>
-            <div class="proyectos-cards">
-                <div class="cards">
-                    <img src="img/post-it.png" alt="Aplicacion tarea de notas">
-                    <div class="contenido-proyectos">
-                        <h3>Lista de tareas</h3>
-                        <p>Este es un proyecto que creé para organizar tareas, de manera sencilla tipo post-it pero
-                            virtualmente, con colores personalizados, ya que muchas personas son mas visuales y
-                            recuerdan
-                            más los colores, siendo un aspecto importante al momento de recordar sus tareas.</p>
-                        <div class="enlaces-proyecto">
-                            <button class="btnProyectos"><a href="https://danielalvz.github.io/listaTareasBootstrap/"
-                                    target="_blank">Ver
-                                    página</a></button>
-                            <button class="btnProyectos"><a href="https://github.com/Danielalvz/listaTareasBootstrap"
-                                    target="_blank">Ver
-                                    código</a></button>
+        <div id="proyectos" class="projects">
+            <img class="img-title" src="img/palomas.png" alt="">
+            <h4 class="title anton-sc-regular">Proyectos</h4>
+            <div class="cards-projects">
+                <div class="project">
+                    <img class="img-project" src="img/post-it.png" alt="">
+                    <div class="project-content">
+                        <h6><span>• Javascript</span><span>• Bootstrap</span></h6>
+                        <h3>Lista de tareas Post-it</h3>
+                        <p>Herramienta para organizar tareas de manera sencilla, diseño de post-its.
+                            Permite personalizar colores, útil para personas visuales que recuerdan mejor sus tareas
+                            a través de colores.</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-info-description">
+                            <h5>Descripción técnica</h5>
+                            <p>Este proyecto es creado con Javascript, Localstorage para guardar localmente los cambios
+                                y
+                                Bootstrap para el diseño.</p>
+                        </div>
+                        <div class="icon-container">
+                            <a href="https://danielalvz.github.io/listaTareasBootstrap/" target="_blank"
+                                class="icon-link">
+                                <i class="fas fa-link"></i>
+                                <span>Página</span>
+                            </a>
+                            <a href="https://github.com/Danielalvz/listaTareasBootstrap" target="_blank"
+                                class="icon-link">
+                                <i class="fab fa-github"></i>
+                                <span>Código</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="cards">
-                    <img src="img/deportes.png" alt="Página deportes">
-                    <div class="contenido-proyectos">
+                <div class="project">
+                    <img class="img-project" src="img/post-it.png" alt="">
+                    <div class="project-content">
+                        <h6><span>• Javascript</span><span>• Bootstrap</span></h6>
+                        <h3>Lista de tareas Post-it</h3>
+                        <p>Herramienta para organizar tareas de manera sencilla, diseño de post-its.
+                            Permite personalizar colores, útil para personas visuales que recuerdan mejor sus tareas
+                            a través de colores.</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-info-description">
+                            <h5>Descripción técnica</h5>
+                            <p>Este proyecto es creado con Javascript, Localstorage para guardar localmente los cambios
+                                y
+                                Bootstrap para el diseño.</p>
+                        </div>
+                        <div class="icon-container">
+                            <a href="https://danielalvz.github.io/listaTareasBootstrap/" target="_blank"
+                                class="icon-link">
+                                <i class="fas fa-link"></i>
+                                <span>Página</span>
+                            </a>
+                            <a href="https://github.com/Danielalvz/listaTareasBootstrap" target="_blank"
+                                class="icon-link">
+                                <i class="fab fa-github"></i>
+                                <span>Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project ">
+                    <img class="img-project" src="img/post-it.png" alt="">
+                    <div class="project-content">
+                        <h6><span>• Javascript</span><span>• Bootstrap</span></h6>
+                        <h3>Lista de tareas Post-it</h3>
+                        <p>Herramienta para organizar tareas de manera sencilla, diseño de post-its.
+                            Permite personalizar colores, útil para personas visuales que recuerdan mejor sus tareas
+                            a través de colores.</p>
+                    </div>
+                    <div class="project-info ">
+                        <div class="project-info-description">
+                            <h5>Descripción técnica</h5>
+                            <p>Este proyecto es creado con Javascript, Localstorage para guardar localmente los cambios
+                                y
+                                Bootstrap para el diseño.</p>
+                            <div class="in-process">
+                                <h6>(Proyecto en construcción)</h6>
+                                <img class="img-in-process" src="img/en-construccion.png" alt="">
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <a href="https://danielalvz.github.io/listaTareasBootstrap/" target="_blank"
+                                class="icon-link">
+                                <i class="fas fa-link"></i>
+                                <span>Página</span>
+                            </a>
+                            <a href="https://github.com/Danielalvz/listaTareasBootstrap" target="_blank"
+                                class="icon-link">
+                                <i class="fab fa-github"></i>
+                                <span>Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img class="img-title" src="img/design4.png" alt="">
+            <h4 class="title anton-sc-regular">Diseños</h4>
+            <div class="cards-projects design">
+                <div class="project">
+                    <img class="img-project" src="img/deportes.png" alt="Página deportes">
+                    <div class="project-content">
+                        <h6><span>• HTML, CSS</span></h6>
                         <h3>Landing page deportes</h3>
-                        <p>Proyecto de diseño de página de deportes marca sportit, con HTML y CSS.
-                        </p>
-                        <div class="enlaces-proyecto">
-                            <button class="btnProyectos"><a href="https://danielalvz.github.io/paginaDeportes/"
-                                    target="_blank">Ver
-                                    página</a></button>
-                            <button class="btnProyectos"><a href="https://github.com/Danielalvz/paginaDeportes"
-                                    target="_blank">Ver
-                                    código</a></button>
+                        <p>Proyecto de diseño de página de deportes marca sportit, con HTML y CSS.</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-info-description">
+                            <h5>Descripción técnica</h5>
+                            <p>Este proyecto es creado con HTML y CSS, basado en un diseño de Figma.</p>
+                        </div>
+                        <div class="icon-container">
+                            <a href="https://danielalvz.github.io/paginaDeportes/" target="_blank" class="icon-link">
+                                <i class="fas fa-link"></i>
+                                <span>Página</span>
+                            </a>
+                            <a href="https://github.com/Danielalvz/paginaDeportes" target="_blank" class="icon-link">
+                                <i class="fab fa-github"></i>
+                                <span>Código</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="cards">
-                    <img src="img/caballos.jpg" alt="Página caballos">
-                    <div class="contenido-proyectos">
+                <div class="project">
+                    <img class="img-project" src="img/caballos.jpg" alt="Página caballos">
+                    <div class="project-content">
+                        <h6><span>• HTML, CSS</span><span>• Bootstrap</span></h6>
                         <h3>Landing page caballos</h3>
-                        <p>Proyecto para practicar el diseño, replicando exactamente una imágen, con HTML, CSS y
-                            Bootstrap.
-                        </p>
-                        <div class="enlaces-proyecto">
-                            <button class="btnProyectos"><a href="https://danielalvz.github.io/paginaCaballos/"
-                                    target="_blank">Ver
-                                    página</a></button>
-                            <button class="btnProyectos"><a href="https://github.com/Danielalvz/paginaCaballos"
-                                    target="_blank">Ver
-                                    código</a></button>
+                        <p>Proyecto para practicar el diseño, replicando exactamente una imágen de página, con HTML, CSS
+                            y
+                            Bootstrap.</p>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-info-description">
+                            <h5>Descripción técnica</h5>
+                            <p>Este proyecto es creado con HTML, CSS y Bootstrap, basado en un prototipo para replicar
+                                exactamente.</p>
+                        </div>
+                        <div class="icon-container">
+                            <a href="https://danielalvz.github.io/paginaCaballos/" target="_blank" class="icon-link">
+                                <i class="fas fa-link"></i>
+                                <span>Página</span>
+                            </a>
+                            <a href="https://github.com/Danielalvz/paginaCaballos" target="_blank" class="icon-link">
+                                <i class="fab fa-github"></i>
+                                <span>Código</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </section>
+        </div>
+        <div id="skills" class="gradient">
+            <div class="skills-content">
+                <h3 class="title anton-sc-regular">Habilidades blandas</h3>
+                <div class="skills-description">
+                    <p><b>Las habilidades blandas son la base que permite a los desarrolladores de software transformar
+                            ideas en
+                            soluciones impactantes.</b></p>
+                    <p>Además de mis habildiades técncias, cuento con habilidades blandas que me permiten colaborar
+                        eficazmente en equipo, comprender las
+                        necesidades de clientes y usuarios, y adaptarme a cambios tecnológicos, contribuyendo al éxito
+                        del
+                        proyecto y fomentando un ambiente de trabajo colaborativo.</p>
+                </div>
+                <div class="skills">
+                    <div class="flip-card">
+                        <div class="card-face card-front">
+                            <img src="img/teamwork3.jpg" alt="">
+                            <h3>Trabajo en equipo</h3>
+                        </div>
+                        <div class="card-face card-back">
+                            <h3>Trabajo en equipo</h3>
+                            <p>Colaboro eficazmente para alcanzar objetivos comunes.</p>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card-face card-front">
+                            <img src="img/problem-solving.jpeg" alt="">
+                            <h3>Resolución de problemas</h3>
+                        </div>
+                        <div class="card-face card-back">
+                            <h3>Resolución de problemas</h3>
+                            <p>Descompongo problemas complejos y busco soluciones creativas, asegurando la calidad.</p>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card-face card-front">
+                            <img src="img/creatividad.jpg" alt="">
+                            <h3>Creatividad</h3>
+                        </div>
+                        <div class="card-face card-back">
+                            <h3>Creatividad</h3>
+                            <p>Propongo soluciones innovadoras y originales.</p>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="card-face card-front">
+                            <img src="img/empathy.png" alt="">
+                            <h3>Empatia</h3>
+                        </div>
+                        <div class="card-face card-back">
+                            <h3>Empatia</h3>
+                            <p>Comprendo y valoro las perspectivas de los usuarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer id="footer">
         <div>
-            <button><a href="https://www.linkedin.com/in/danielalozanov-developer/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></button>
+            <button><a href="https://www.linkedin.com/in/danielalozanov-developer/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></button>
             <button><a href="https://github.com/Danielalvz" target="_blank"><i
                         class="fa-brands fa-github"></i></a></button>
             <button><a href="mailto:danivasquez0310@gmail.com"><i class="fa-solid fa-envelope"></i></a></button>
         </div>
         <div>
-            <p>© 2023 Copyright:</p>
+            <p>© 2024 Copyright:</p>
             <a class="text-dark" href="https://github.com/Danielalvz" target="_blank">Daniela Lozano</a>
         </div>
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/cards.js"></script>
 </body>
 
 </html>
