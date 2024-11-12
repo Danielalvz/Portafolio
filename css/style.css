@@ -479,6 +479,26 @@ body.dark .herramienta::before {
     z-index: 101;
 }
 
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 439px) {
+    .descripcion {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .herramienta .descripcion {
+        font-size: 0.9em;
+        width: 50vw;
+    }
+
+    /* Ajuste específico para el último elemento de cada fila */
+    .card-herramientas .herramienta:last-child:hover .descripcion {
+        top: -100%;
+    }
+}
+
 /* PROJECTS */
 .projects {
     width: 80%;
@@ -824,7 +844,9 @@ body.dark footer a i:hover {
     }
 
     .descripcion {
-        width: 50vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30vw;
     }
 
     #tecnologias {
